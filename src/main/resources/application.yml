@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-ai-chat-bot
+
+  ai:
+    openai:
+      base-url: https://api.siliconflow.cn/
+      api-key: xxx
+      chat:
+        options:
+          model: deepseek-ai/DeepSeek-V3
+
+server:
+  port: 8090
