@@ -22,13 +22,12 @@ import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
-/**
- * @author 北极星
- */
 @RestController
+@RequestMapping("deepSeekChatModel")
 public class DeepSeekChatModelController {
 
     private static final String DEFAULT_PROMPT = "你好，介绍下你自己吧。";
